@@ -10,8 +10,6 @@
         <!--=============== BOXICONS ===============-->
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="">
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
@@ -412,6 +410,15 @@
                         </a>
                     </div>
             
+                    <div class="work__card mix web">
+                        <img src="assets/img/crypto-feed.png" alt="" class="work__img">
+
+                        <h3 class="work__title">Crypto feed</h3>
+
+                        <a href="https://cryptofed.netlify.app/" class="work__button">
+                            Demo<i class='bx bx-right-arrow-alt work__icon'></i>
+                        </a>
+                    </div>
                 </div>
             </section>
 
@@ -465,22 +472,23 @@
                     <div class="contact__content">
                         <h3 class="contact__title">Write me your project</h3>
 
-                        <form action="" class="contact__form">
+                        <form action="https://formsubmit.co/sanathnathv@gmail.com" class="contact__form" method="post">
                             <div class="contact__form-div">
-                                <label for="" class="contact__form-tag">Name</label>
-                                <input type="text" placeholder="Insert your name" class="contact__form-input">
+                                <label for="name" class="contact__form-tag">Name</label>
+                                <input id="name" name="name" type="text" placeholder="Insert your name" class="contact__form-input" required>
                             </div>
 
                             <div class="contact__form-div">
-                                <label for="" class="contact__form-tag">Mail</label>
-                                <input type="email" placeholder="insert your email" class="contact__form-input">
+                                <label for="email" class="contact__form-tag">Mail</label>
+                                <input id="email" name="email" type="email" placeholder="insert your email" class="contact__form-input" required>
                             </div>
 
                             <div class="contact__form-div contact__form-area">
-                                <label for="" class="contact__form-tag">Project</label>
-                                <textarea name="" id="" cols="30" rows="10" placeholder="write your project" class="contact__form-input"></textarea>
+                                <label for="project" class="contact__form-tag">Project</label>
+                                <textarea name="project" id="project" cols="30" rows="10" placeholder="write your project" class="contact__form-input" required></textarea>
                             </div>
-
+                            <input type="hidden" name="_captcha" value="false">
+                            <!-- <input type="hidden" name="_next" value="contact__content"> -->
                             <button class="button">Send Message</button>
                         </form>
                     </div>
@@ -526,13 +534,13 @@
         <!--=============== SCROLLREVEAL ===============-->
         <script src="assets/js/scrollreveal.min.js"></script>
 
-        <!--=============== SWIPER JS ===============-->
-        <script src=""></script>
-
         <!--=============== MIXITUP FILTER ===============-->
         <script src="assets/js/mixitup.min.js"></script>
 
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
+
+        <!--============= sweet alert ============-->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </body>
 </html>
